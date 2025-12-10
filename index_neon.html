@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang cá nhân - Lê Tuấn Phong (Neon)</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#071218;
+      --neon1:#00f5a0; /* xanh neon */
+      --neon2:#7c4dff; /* tím neon */
+      --muted:#bfc8d6;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(135deg,var(--bg),#06121a);color:#eaf2f7}
+    .wrap{max-width:1000px;margin:28px auto;padding:20px}
+
+    /* header */
+    .header{display:flex;gap:20px;align-items:center}
+    .photo{width:96px;height:120px;border-radius:12px;overflow:hidden;/* border removed */box-shadow:0 6px 24px rgba(0,245,160,0.12);flex-shrink:0;background:linear-gradient(180deg,#0b1116, #081018)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .name h1{margin:0;font-size:28px;letter-spacing:0.4px}
+    .sub{color:var(--muted);margin-top:6px;font-size:14px}
+
+    /* layout */
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:10px;/* border removed */font-size:16px}
+    ul{margin:8px 0 0 18px}
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);margin-right:8px;margin-bottom:8px;font-size:13px}
+
+    /* neon accents */
+    .accent{color:var(--neon1)}
+    .aside .contact a { text-decoration: none; color: #ffeeaa; font-weight: 500; transition: 0.3s; }
+.contact a:hover { color: #ffffff; }
+
+    /* schedule table */
+    table.schedule{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+    table.schedule th, table.schedule td{padding:8px;/* border removed */text-align:left}
+
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.photo{width:88px;height:108px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="photo"><img src="https://media.discordapp.net/attachments/1298045716307902485/1448301565076049930/31._TUAN_PHONG.jpg?ex=693ac371&is=693971f1&hm=fd61cd30381ff6be5a6934a3e0a309bc9e11e8e25d943bdec843978d1a11b9eb&=&format=webp&width=511&height=681" alt="Ảnh Phong"></div>
+      <div class="name">
+        <h1>Lê Tuấn Phong <span class="accent">•</span></h1>
+        <div class="sub">Sinh: 26/11/2007 • ĐH KHTN - ĐHQG TP.HCM, Khoa CNTT</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        
+
+        <section class="card squared">
+          <h2>Sở thích</h2>
+          <div>
+            <span class="tag">Minecraft</span>
+            <span class="tag">Roblox</span>
+            <span class="tag">Gacha games</span>
+            <span class="tag">Rap / Remix / Nhạc nhẹ</span>
+            <span class="tag">Đọc truyện mạng</span>
+          </div>
+        </section>
+
+        <section class="card squared">
+          <h2>Điểm mạnh</h2>
+          <ul>
+            <li>Dễ hòa đồng, dễ nói chuyện</li>
+            <li>Thích tìm tòi những thứ mới (tương đối)</li>
+            <li>Khi tập trung thì hiệu quả cao</li>
+          </ul>
+        </section>
+
+        <section class="card squared">
+          <h2>Điểm yếu</h2>
+          <ul>
+            <li>Dễ mất tập trung</li>
+            <li>Lười, hay trì hoãn</li>
+            <li>Chưa tự tin lắm trước đám đông</li>
+          </ul>
+        </section>
+
+        <section class="card squared">
+          <h2>Ước mơ & Dự định</h2>
+          <ul>
+            <li>Có con đường học tập & làm việc thuận lợi</li>
+            <li>Tự chủ tài chính</li>
+            <li>Try hard học tập</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <aside class="aside">
+        <section class="card squared contact">
+          <h2>Liên hệ</h2>
+          <p class="muted"><strong>Email:</strong> <a href="mailto:phongrong351@gmail.com">phongrong351@gmail.com</a><br><strong>Phone:</strong> 0962752560</p>
+        </section>
+
+        <section class="card squared">
+          <h2>Lịch mẫu</h2>
+          <table class="schedule">
+            <tr><th>Thời gian</th><th>Hoạt động</th></tr>
+            <tr><td>06:30–07:00</td><td>Thức dậy, vệ sinh, ăn sáng</td></tr>
+            <tr><td>07:00–11:30</td><td>Học / Đi học</td></tr>
+            <tr><td>11:30–13:00</td><td>Nghỉ trưa</td></tr>
+            <tr><td>13:00–17:00</td><td>Học bài, làm bài tập</td></tr>
+            <tr><td>17:00–19:00</td><td>Giải trí, chơi game, nghe nhạc</td></tr>
+            <tr><td>19:00–21:30</td><td>Học thêm / đọc truyện</td></tr>
+            <tr><td>21:30–22:30</td><td>Chuẩn bị hôm sau, relax</td></tr>
+          </table>
+        </section>
+
+      </aside>
+    </div>
+
+    
+  </div>
+</body>
+</html>
